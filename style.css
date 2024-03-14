@@ -144,6 +144,56 @@ Version: 3.0.13
   border-bottom: 4px solid var(--orange);
 }
 
+/* HOME FEATURES */
+
+#features {
+  background-color: var(--main);
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#features .features__col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+#features .features__icon {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#features .features__content {
+  display: flex;
+  flex-direction: column;
+  text-wrap: nowrap;
+}
+
+#features h3 {
+  background-color: var(--main);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1;
+}
+
+#features p {
+  background-color: var(--main);
+  font-size: 17px;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
 /* BANNERS */
 
 #banners {

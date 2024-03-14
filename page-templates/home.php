@@ -8,22 +8,70 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-
+$template_dir = get_template_directory_uri();
 get_header();
 ?>
 
-<div class="wrapper d-flex align-items-end" id="hero"
-    style="background-image: url('<?php echo click5_check_background(); ?>')">
-    <div class="container">
-        <div class="row">
-            <div class="content col-12 text-center">
-                <div class="hero__label">Tiger Electric</div>
-                <h1><?php echo get_field("hero_title_1"); ?></h1>
-                <h3><?php echo get_field("hero_title_2"); ?></h3>
+<section>
+    <div class="wrapper d-flex align-items-end" id="hero"
+        style="background-image: url('<?php echo click5_check_background(); ?>')">
+        <div class="container">
+            <div class="row">
+                <div class="content col-12 text-center">
+                    <div class="hero__label">Tiger Electric</div>
+                    <h1><?php echo get_field("hero_title_1"); ?></h1>
+                    <h3><?php echo get_field("hero_title_2"); ?></h3>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+
+
+<section>
+    <div class="features" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 features__col">
+                    <div class="features__icon">
+                        <img src="<?php echo $template_dir ?>/img/icon_licensed.png" alt="">
+                    </div>
+                    <div class="features__content">
+                        <h3>Licensed, Insured</h3>
+                        <p>& Experienced</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 features__col">
+                    <div class="features__icon">
+                        <img src="<?php echo $template_dir ?>/img/icon_pricing.png" alt="">
+                    </div>
+                    <div class="features__content">
+                        <h3>Transparent Pricing</h3>
+                        <p>no catches of fine print</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 features__col">
+                    <div class="features__icon">
+                        <img src="<?php echo $template_dir ?>/img/icon_stocked.png" alt="">
+                    </div>
+                    <div class="features__content">
+                        <h3>Fully-Stocked</h3>
+                        <p>Service Vehicle</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 features__col">
+                    <div class="features__icon">
+                        <img src="<?php echo $template_dir ?>/img/icon_billing.png" alt="">
+                    </div>
+                    <div class="features__content">
+                        <h3>Provide Pricing, Billing</h3>
+                        <p>& Financing Options On-Site</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
