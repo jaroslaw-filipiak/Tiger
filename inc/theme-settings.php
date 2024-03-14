@@ -75,7 +75,7 @@ function click5_check_background() {
 	if ( has_post_thumbnail() ){
 		$featured_img_url = get_the_post_thumbnail_url(get_the_ID()); 
 	} else {
-		$featured_img_url = esc_url( get_template_directory_uri() ) . '/img/heroes/hero.webp';
+		$featured_img_url = esc_url( get_template_directory_uri() ) . '/img/hero.webp';
 	}
 
 	return $featured_img_url;

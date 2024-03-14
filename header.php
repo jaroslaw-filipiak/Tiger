@@ -6,6 +6,8 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; 
 }
+
+$template_dir = get_template_directory_uri();
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -46,7 +48,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
             <div class="logo">
                 <a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
-                    title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" itemprop="url">Logo</a>
+                    title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" itemprop="url">
+                    <img loading="lazy" src="<?php echo $template_dir ?>/img/logo.png"
+                        alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
+                </a>
             </div>
 
             <div class="navigation d-flex justify-content-end align-items-center">

@@ -17,8 +17,8 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="content col-12 text-center">
-                <h3><?php echo get_field("hero_title_1"); ?></h3>
-                <h1><?php echo get_field("hero_title_2"); ?></h1>
+                <h1><?php echo get_field("hero_title_1"); ?></h1>
+                <h3><?php echo get_field("hero_title_2"); ?></h3>
             </div>
         </div>
     </div>
@@ -92,7 +92,7 @@ get_header();
                 <h2><?php echo get_sub_field("title"); ?></h2>
                 <?php echo get_sub_field("text"); ?>
                 <a
-                    href="<?php echo get_sub_field("button")['url']; ?>"><span><?php echo get_sub_field("button")['title']; ?></span></a>
+                    href="<?php // echo get_sub_field("button")['url']; ?>"><span><?php // echo get_sub_field("button")['title']; ?></span></a>
             </div>
         </div>
 
