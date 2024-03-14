@@ -301,26 +301,37 @@ Version: 3.0.13
   background-color: #f9f9f9;
 }
 
+#about .pretitle {
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #6f6f6f;
+  margin-bottom: 20px;
+}
+
 #about .headline {
   padding-left: 45px;
 }
 #about .headline h2 {
-  color: #000;
-  font-size: 33px;
-  font-weight: 700;
+  color: #0e131c;
+  font-size: 24px;
+  font-weight: 600;
   line-height: 39px;
   letter-spacing: -0.33px;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 #about .headline h2::after {
   content: '';
   display: block;
-  width: 210px;
-  height: 17px;
+  width: 150px;
+  height: 6px;
   margin-top: 30px;
   background-color: var(--main);
   border-radius: 8px;
+  margin: 30px auto 0px auto;
 }
 
 #about .content {
@@ -328,56 +339,40 @@ Version: 3.0.13
   padding-right: 25px;
 }
 #about .content p {
-  color: #000;
-  font-size: 19px;
-  font-weight: 400;
+  color: #313640;
+  font-size: 18px;
+  font-weight: 300;
   line-height: 30px;
   letter-spacing: -0.19px;
   padding: 0;
+  text-align: center;
+  margin-top: 20px;
 }
 #about .content a {
   position: relative;
   display: inline-block;
-  color: #000;
-  font-size: 18px;
+  color: #0e131c;
+  font-weight: 600;
+  font-size: 16px;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -0.18px;
   padding: 0;
-  margin: 22px 0 0 0;
+  margin-top: 10px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
-#about .content a::before {
-  content: '';
-  display: block;
-  width: 53px;
-  height: 53px;
-  background-color: #fff;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  transition: all 0.3s;
-}
+
 #about .content a:hover {
   color: var(--main);
   text-decoration: none;
 }
-#about .content a:hover::before {
-  background-color: transparent;
-}
+
 #about .content a span {
   position: relative;
   display: block;
   margin-top: 16px;
-  margin-left: 23px;
 }
-#about .content a span::after {
-  content: '→';
-  font-family: 'Arial';
-  font-size: 20px;
-  padding-left: 7px;
-}
-
 /* HEADLINE */
 
 .home-headline h3 {

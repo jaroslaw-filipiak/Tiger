@@ -27,7 +27,6 @@ get_header();
     </div>
 </section>
 
-
 <section>
     <div class="features" id="features">
         <div class="container">
@@ -73,24 +72,30 @@ get_header();
     </div>
 </section>
 
+<section>
+    <div class="wrapper" id="about">
+        <div class="container">
+            <div class="row">
 
+                <div class="pretitle col-12">
+                    About Tiger Electric
+                </div>
 
-<div class="wrapper" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="headline col-md-5 col-12">
-                <h2><?php echo get_field("about_title"); ?></h2>
-            </div>
+                <div class="headline col-12">
+                    <h2><?php echo get_field("about_title"); ?></h2>
+                </div>
 
-            <div class="content col-md-7 col-12">
-                <?php echo get_field("about_text"); ?>
+                <div class="content col-12 text-center">
+                    <?php echo get_field("about_text"); ?>
 
-                <a
-                    href="<?php echo get_field("about_button")['url']; ?>"><span><?php echo get_field("about_button")['title']; ?></span></a>
+                    <a href="<?php echo get_field("about_button")['url']; ?>"><span><?php echo get_field("about_button")['title']; ?></span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+
 
 <?php if( have_rows("services_items") ) : ?>
 
