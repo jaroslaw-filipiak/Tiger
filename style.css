@@ -582,22 +582,13 @@ Version: 3.0.13
 
 #cta {
   position: relative;
+  padding-top: 35px !important;
 }
 
-#cta .content h3 {
-  display: block;
-  color: rgba(232, 235, 241, 0.4);
-  font-size: 53px;
-  font-weight: 800;
-  line-height: 100%;
-  letter-spacing: -1.06px;
-  padding: 0;
-  margin: 0;
-}
 #cta .content h2 {
-  color: #2a2a2a;
-  font-size: 25px;
-  font-weight: 700;
+  color: #0e131c;
+  font-size: 24px;
+  font-weight: 600;
   line-height: 100%;
   letter-spacing: -0.5px;
   padding: 0 0 28px 0;
@@ -605,16 +596,18 @@ Version: 3.0.13
 }
 
 #cta .content a {
-  display: block;
-  width: 340px;
-  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 67px;
   color: #fff;
-  font-size: 19px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 500;
   line-height: 56px;
   letter-spacing: 0;
   padding: 0;
-  margin: 5px 5px 0 5px;
+  margin: 0px 5px 0 5px;
   background-color: var(--main);
   border: 1px solid var(--main);
   border-radius: 3px;
@@ -628,11 +621,18 @@ Version: 3.0.13
   background-color: transparent;
 }
 #cta .content a.phone {
-  background-color: #000;
-  border: 1px solid #000;
+  color: var(--main);
+  background-color: #fff;
+  border: 1px solid #c9c9c9;
+  gap: 10px;
+}
+
+#cta .content a.phone span {
+  color: #212022;
+  font-weight: 500;
 }
 #cta .content a.phone:hover {
-  color: #000;
+  color: #fff;
   background-color: transparent;
 }
 
