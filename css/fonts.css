@@ -1,6 +1,14 @@
 @font-face {
   font-family: 'Inter';
   font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/Inter-ExtraLight.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
   font-weight: 300;
   src: url('../fonts/Inter-Light.ttf') format('truetype'),
     url('../fonts/Inter-Light.otf') format('opentype');
@@ -58,14 +66,5 @@
   font-weight: 900;
   src: url('../fonts/Inter-Black.ttf') format('truetype'),
     url('../fonts/Inter-Black.otf') format('opentype');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter Extra';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../fonts/Inter-ExtraLight.ttf') format('truetype'),
-    url('../fonts/Inter-ExtraLight.otf') format('opentype');
   font-display: swap;
 }

@@ -102,20 +102,32 @@ Version: 3.0.13
 #hero {
   position: relative;
   height: 850px;
-  padding-bottom: 220px;
+  padding-bottom: 75px;
   background-color: #c5c5c5;
   background-size: cover;
   background-position: top center;
   z-index: 4;
 }
 
+#hero .hero__label {
+  display: inline-flex;
+  font-size: 15px;
+  color: #fff;
+  font-family: 'Inter';
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--main);
+  padding: 5px 36px;
+  margin-bottom: 15px;
+}
+
 #hero h3 {
   color: #fff;
+  font-family: 'Inter';
   font-size: 21px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 100%;
-  letter-spacing: 2px;
-  padding: 0 0 30px 0;
+  padding: 25px 0 30px 0;
   margin: 0;
 }
 #hero h1 {

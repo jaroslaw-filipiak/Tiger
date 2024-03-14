@@ -17,6 +17,7 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="content col-12 text-center">
+                <div class="hero__label">Tiger Electric</div>
                 <h1><?php echo get_field("hero_title_1"); ?></h1>
                 <h3><?php echo get_field("hero_title_2"); ?></h3>
             </div>
