@@ -12,6 +12,7 @@ $template_dir = get_template_directory_uri();
 get_header();
 ?>
 
+<!-- hero -->
 <section>
     <div class="wrapper d-flex align-items-end" id="hero"
         style="background-image: url('<?php echo click5_check_background(); ?>')">
@@ -27,13 +28,14 @@ get_header();
     </div>
 </section>
 
+<!-- features -->
 <section>
     <div class="features" id="features">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-3 features__col">
                     <div class="features__icon">
-                        <img src="<?php echo $template_dir ?>/img/icon_licensed.png" alt="">
+                        <img src="<?php echo $template_dir ?>/img/icon_licensed.webp" alt="">
                     </div>
                     <div class="features__content">
                         <h3>Licensed, Insured</h3>
@@ -42,7 +44,7 @@ get_header();
                 </div>
                 <div class="col-12 col-lg-3 features__col">
                     <div class="features__icon">
-                        <img src="<?php echo $template_dir ?>/img/icon_pricing.png" alt="">
+                        <img src="<?php echo $template_dir ?>/img/icon_pricing.webp" alt="">
                     </div>
                     <div class="features__content">
                         <h3>Transparent Pricing</h3>
@@ -51,7 +53,7 @@ get_header();
                 </div>
                 <div class="col-12 col-lg-3 features__col">
                     <div class="features__icon">
-                        <img src="<?php echo $template_dir ?>/img/icon_stocked.png" alt="">
+                        <img src="<?php echo $template_dir ?>/img/icon_stocked.webp" alt="">
                     </div>
                     <div class="features__content">
                         <h3>Fully-Stocked</h3>
@@ -60,7 +62,7 @@ get_header();
                 </div>
                 <div class="col-12 col-lg-3 features__col">
                     <div class="features__icon">
-                        <img src="<?php echo $template_dir ?>/img/icon_billing.png" alt="">
+                        <img src="<?php echo $template_dir ?>/img/icon_billing.webp" alt="">
                     </div>
                     <div class="features__content">
                         <h3>Provide Pricing, Billing</h3>
@@ -72,8 +74,9 @@ get_header();
     </div>
 </section>
 
+<!-- about -->
 <section>
-    <div class="wrapper" id="about">
+    <div class="wrapper" id="about" style="background-image: url(<?php echo $template_dir ?>/img/tiger_half.jpg)">
         <div class="container">
             <div class="row">
 
@@ -93,42 +96,39 @@ get_header();
                 </div>
             </div>
         </div>
+
     </div>
 </section>
 
+<!-- services -->
+<section>
+    <?php if( have_rows("services_items") ) : ?>
 
-<?php if( have_rows("services_items") ) : ?>
+    <div class="wrapper" id="services">
+        <div class="container">
 
-<div class="wrapper" id="services">
-    <div class="container">
-        <div class="row">
-            <div class="home-headline col-12 text-center">
-                <h3><?php echo get_field("services_title_1"); ?></h3>
-                <h2><?php echo get_field("services_title_2"); ?></h2>
+            <div class="row">
+                <?php while( have_rows("services_items") ) : the_row(); 
+
+                $image = get_sub_field('image');
+                $title = get_sub_field('title');
+                
+                ?>
+
+                <div class="services-item" style="background-image: url(<?php echo $image ?>">
+                    <div class="services-item__heading"><?php echo $title ?></div>
+                    <a href="#">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                </div>
+                <?php endwhile; ?>
             </div>
-        </div>
-
-        <div class="row no-gutters">
-            <?php while( have_rows("services_items") ) : the_row(); ?>
-
-            <div class="box col-xl-3 col-sm-6 col-12">
-                <a href="<?php echo get_sub_field("url"); ?>">
-                    <div class="icon">
-                        <img src="<?php echo get_sub_field("icon"); ?>?v=1.2" alt="icon" />
-                    </div>
-
-                    <div class="content">
-                        <h2><?php echo get_sub_field("title"); ?></h2>
-                    </div>
-                </a>
-            </div>
-
-            <?php endwhile; ?>
         </div>
     </div>
-</div>
 
-<?php endif; ?>
+    <?php endif; ?>
+</section>
+
 <?php if(have_rows("textboxes")) : ?>
 
 <div class="wrapper pt-0" id="textbox">

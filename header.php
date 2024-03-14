@@ -49,7 +49,7 @@ $template_dir = get_template_directory_uri();
             <div class="logo">
                 <a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
                     title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" itemprop="url">
-                    <img loading="lazy" src="<?php echo $template_dir ?>/img/logo.png"
+                    <img loading="lazy" src="<?php echo $template_dir ?>/img/logo.webp"
                         alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
                 </a>
             </div>
